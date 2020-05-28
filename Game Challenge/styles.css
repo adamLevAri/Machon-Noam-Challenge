@@ -1,0 +1,140 @@
+body {
+    direction: rtl;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -0.5px;;
+}
+
+div {
+    text-align: right;
+}
+
+a {
+    color: black;
+}
+
+
+.logoTitle {
+    color: grey;
+    position: relative;
+    margin-right: 15px;
+    padding-top: 6px
+}
+.navbar-nav {
+    width: 100%;
+    direction: ltr;
+}
+.headerMap {
+    padding-right: 25px;
+}
+.headerBackButton {
+    visibility: hidden;
+}
+.headerImg {
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    display: block;
+}
+.contentRow {
+    width: inherit;
+}
+.fillButton {
+    background-color: rgb(209, 36, 102);
+    border: none;
+    color: white;
+    width: 10em;
+    height: 2em;
+    border-radius: 10px;
+}
+.shallowButton {
+    border-color: rgb(209, 36, 102);
+    color: rgb(209, 36, 102);
+    width: 10em;
+    height: 2em;
+    border-radius: 7px;
+}
+.rightContent{
+    width: 60%;
+    float: right;
+}
+.leftContent{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    padding-top: 10px;
+}
+
+.footer {
+    position: relative;
+
+    clear:both;
+    padding-top:20px;
+  } 
+
+
+@media only screen and (max-width:576px) {
+/*small screen*/ 
+
+.rightContent{
+    width: 100%;
+    float: none;
+}
+.leftContent{
+    width: 100%;
+    float: none;
+}
+    .rightNav {
+        width: 100%;
+    }
+    .logo {
+        margin: auto;
+        display: block;
+    }
+
+    .logoTitle {
+        visibility: hidden;
+        display: none;
+    }
+    .headerImg {
+        visibility: hidden;
+        display: none;
+    }
+    a.headerBackButton {
+        visibility: visible;
+        color: grey;
+    }
+    .headerMap {
+        visibility: hidden;
+        display: none;
+    }
+    .fillButton {
+        width: 80%;
+        height: 3em;
+    }
+    .shallowButton {
+        width: 80%;
+    }
+    .reDrillButtonMobile{
+        text-align: center;
+        display: block;
+    }
+        
+
+    
+}
+
+
+
+/*
+sizes:
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+
+
+
+
+*/

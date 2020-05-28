@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+<div id="mainDiv">
+    <!-- header -->
+    <div>
+        <h1 style="letter-spacing: 2px; color: orange;"> Shoot The Hoop </h1>
+    </div>
+
+    <!-- game board -->
+     <div id="gameBox">
+        <div id="hook" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            
+        </div>
+    
+        <!-- dragable item -->    
+        <img id="ball" src="./img/basketball.png" draggable="false" ondragstart="drag(event, 'ball')">
+        <img id="ball2" src="./img/volleyball.png" draggable="false" ondragstart="drag(event, 'ball2')">
+
+        <!-- seconds left counter -->
+        <div id="countCircle"> </div>
+        
+    </div>
+
+    
+
+    <!-- popup  -->
+    <div id="popup">
+        <div id="popupBox">
+            <h1 id="popupTitle"></h1>
+            <div id="popupButton" onclick="replayHandler()"> Play Again </div>
+        </div>
+        
+    </div>
+
+    <!-- score board -->
+    <div> 
+        <div id="scoreBox">
+            <div id="timerLabel" > 
+                <p id="label"> Time Left: </p>
+                <p id="timer"></span>
+                
+            </div>
+
+            <div id="scoreBoxButton">
+                <i id="timerButton" class="fas fa-pause" style="color: orange;" onclick="timerToggle()" ></i>
+            </div>
+            
+            <div id="scoreLabel">
+                <p id="label"> Your Score: </p>
+                <p id="score"></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
